@@ -1,0 +1,76 @@
+/* Tic Tac Toe */
+
+*::before, *::after, *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: arial;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#root {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
+}
+
+#primary {
+	background-color: coral;
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+}
+
+#room {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.btn {
+	padding: 64px;
+	border-radius: 0;
+	border: 2px inset blue;
+	cursor: pointer;
+	font-size: 48px;
+}
+
+#user_symbol {
+	display: flex;
+	gap: 1rem;
+}
+
+#mark-1 {
+	font-size: 3rem;
+	display: grid;
+	gap: 1rem;
+}
+
+#mark-1 button {
+	padding: 2rem;
+	font-size: 2rem;
+	border-width: 15px;
+	color: white;
+	background-color: coral;
+	cursor: pointer;
+}
+
+#winner {
+	background-color: green;
+	color: white;
+	font-size: 3rem;
+}
+
+#draw {
+	background-color: gold;
+	color: white;
+	font-size: 3rem;
+}
